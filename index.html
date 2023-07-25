@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A</title>
+    <!-- fon family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+      <!-- fontawesome link -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- daisyui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custome tailwind -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+
+<style>
+    .font-poppins{
+        font-family: 'Lato', sans-serif;
+    }
+    .border-r{border-radius: 600px;}
+    .search-border{border-radius: 50px;}
+  </style>
+
+</head>
+<body class="font-family">
+    <header class="max-w-screen-xl mx-auto">
+            <!-- navbar -->
+            <div class="navbar lg:bg-[#F85559] border-r mt-4 px-12 py-4 sm:text-black lg:text-white flex sm:flex-row-reverse  lg:flex-row justify-between items-center">
+                <div class="w-auto lg:hidden">
+                  <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                      </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 bg-red-100 text-black rounded-box w-52">
+                      <li><a>Home</a></li>
+                      <li><a>About Us</a></li>
+                      <li><a>Shop</a></li>
+                      <li><a>All Fruits</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-lg font-medium">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                  </ul>
+                </div>
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                    <a class="btn btn-ghost normal-case text-3xl font-bold">Fruit Burst</a>
+                </div>
+                <div class="w-auto hidden lg:flex">
+                    <div class="form-control w-64 flex-row items-center search-border bg-white">
+                        <input type="text" placeholder="Search here" class="input search-border" />
+                        <i class="fa-solid fa-magnifying-glass text-black text-xl p-2"></i>
+                    </div>
+                </div>
+              </div>
+    </header>
+    <main class="max-w-screen-xl mx-auto">
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
